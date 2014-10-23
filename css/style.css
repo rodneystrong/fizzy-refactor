@@ -1,0 +1,27 @@
+
+/*Font*/
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+/*Layout*/
+.space {
+	margin: 10px 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*Fizz Buzz color changing*/
+ul li:nth-child(3n) {
+	color: red;
+}
+
+ul li:nth-child(5n) {
+	color: blue;
+}
+
+ul li:nth-child(15n) {
+	color: orange;
+}
