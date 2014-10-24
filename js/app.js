@@ -1,26 +1,16 @@
-
 /*Javascript only version*/
-var thePlace = document.getElementById('the-numbers');
 
-//parseInt();
+/*anonymous function version for window.onload*/
+window.onload = function(parsedNum) {
+	var thePlace = document.getElementById('the-numbers');
 
-var userInput = prompt('hello, number please', 'here');
+	//parseInt();
 
-var parsedNum = parseInt(userInput);
+	var userInput = prompt('hello, number please', 'here');
 
-function printNumber(theNum){
+	var parsedNum = parseInt(userInput);
 
-	//this shit didn't work
-	// var fizz = document.createTextNode('fizz');
-	// var buzz = document.createTextNode('buzz');
-	// var fizzBuzz = document.createTextNode('fizzbuzz');
-
-	//removing these as unnecessary for now
-	// var theFizz = theLi.appendChild(fizz);
-	// var theBuzz = theLi.appendChild(buzz);
-	// var theFizzBuzz = theLi.appendChild(fizzBuzz);
-
-	for(i=1; i<=theNum; i++){
+	for(i=1; i<=parsedNum; i++){
 		var theLi = document.createElement('li');
 		if((i % 3 == 0) && (i % 5 == 0)){
 			theLi.innerHTML = "fizzBuzz";
@@ -38,7 +28,5 @@ function printNumber(theNum){
 		attr.value = 'spacing';
 		theLi.setAttributeNode(attr);
 	}
-}
-
-printNumber(parsedNum);
+};
 
