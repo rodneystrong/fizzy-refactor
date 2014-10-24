@@ -1,9 +1,5 @@
 
 /*Javascript only version*/
-var thePlace = document.getElementById('the-numbers');
-
-var theButton = document.getElementById('theButton');
-
 //parseInt();
 
 var userInput = prompt('hello, number please', 'here');
@@ -43,3 +39,4 @@ function printNumber(theNum){
 }
 
 printNumber(parsedNum);
+
