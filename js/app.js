@@ -22,7 +22,7 @@ function printNumber(theNum){
 	// var theBuzz = theLi.appendChild(buzz);
 	// var theFizzBuzz = theLi.appendChild(fizzBuzz);
 
-	for(i=1; i<theNum; i++){
+	for(i=1; i<=theNum; i++){
 		var theLi = document.createElement('li');
 		if((i % 3 == 0) && (i % 5 == 0)){
 			theLi.innerHTML = "fizzBuzz";
@@ -42,4 +42,4 @@ function printNumber(theNum){
 	}
 }
 
-theButton.onclick = printNumber(parsedNum);
+printNumber(parsedNum);
