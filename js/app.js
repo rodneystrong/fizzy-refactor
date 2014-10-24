@@ -1,5 +1,7 @@
 
 /*Javascript only version*/
+var thePlace = document.getElementById('the-numbers');
+
 //parseInt();
 
 var userInput = prompt('hello, number please', 'here');
