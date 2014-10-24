@@ -4,7 +4,13 @@ var thePlace = document.getElementById('the-numbers');
 
 var theButton = document.getElementById('theButton');
 
-function printNumber(){
+//parseInt();
+
+var userInput = prompt('hello, number please', 'here');
+
+var parsedNum = parseInt(userInput);
+
+function printNumber(theNum){
 
 	//this shit didn't work
 	// var fizz = document.createTextNode('fizz');
@@ -16,7 +22,7 @@ function printNumber(){
 	// var theBuzz = theLi.appendChild(buzz);
 	// var theFizzBuzz = theLi.appendChild(fizzBuzz);
 
-	for(i=1; i<100; i++){
+	for(i=1; i<theNum; i++){
 		var theLi = document.createElement('li');
 		if((i % 3 == 0) && (i % 5 == 0)){
 			theLi.innerHTML = "fizzBuzz";
@@ -31,9 +37,9 @@ function printNumber(){
 
 		thePlace.appendChild(theLi);
 		var attr = document.createAttribute('class');
-		attr.value = 'space';
+		attr.value = 'spacing';
 		theLi.setAttributeNode(attr);
 	}
 }
 
-theButton.onclick = printNumber;
+theButton.onclick = printNumber(parsedNum);
